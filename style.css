@@ -83,6 +83,29 @@ color: rgb(66, 66, 66);
     border-radius: 8px;
     box-shadow: 1px 1px 20px 8px rgb(120, 119, 119);
 }
+.socialIcons{
+    padding: 10px 0px;
+    width: 250px;
+    height: 50px;
+    /* border: 1px solid red; */
+    margin-top: 10px;
+}
+.socialIcons a i{
+    text-decoration: none;
+    font-size: 35px;
+    margin-left: 10px;
+    background-image: linear-gradient(180deg,
+    #8A2387 0%,
+    #E94057 50%,
+     #ff7e2d 100%);
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   transition: 0.8s all ease;
+}
+.socialIcons a i:hover{
+ transform: translateY(-15px);
+}
 
 /* PROJECT SECTION */
 
@@ -253,8 +276,6 @@ max-width: 350px;
     text-align: center;
     padding-top: 20px;
 }
-
-
 .skill-level{
     position: absolute;
     border: 6px solid orangered;
