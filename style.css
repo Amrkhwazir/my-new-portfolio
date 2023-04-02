@@ -87,20 +87,20 @@ color: rgb(66, 66, 66);
 /* PROJECT SECTION */
 
 .projectSection{
-
     margin-top: 50px;
     padding: 30px;
     max-width: 100%;
-    height: 1050px;
-    background-image: linear-gradient(to right, #000000, #313131);
-
+    height: 1450px;
+    background-image: linear-gradient(to right, #c1c8ff, #dddcdc);
+    /* display: none; */
 }
+
 .projectSection h1{
-    color: white;
-    font-size: 45px;
+    color: black;
+    font-size: 55px;
     text-align: center;
     margin-bottom: 40px;
-    text-shadow: 1px 4px 1px gray;
+    text-shadow: 1px 6px 1px rgb(104, 104, 104);
 }
 .cards{
     display: flex;
@@ -115,6 +115,7 @@ color: rgb(66, 66, 66);
     position: relative;
     width: 350px;
     height: 280px;
+    margin-bottom: 20px;
 }
 .projectBox:hover img{
     filter: blur(15px);
@@ -126,8 +127,9 @@ color: rgb(66, 66, 66);
 .projectBox img{
     width: 350px;
     height: 100%;
-    border-radius: 15px;
+    border-radius: 18px;
     transition: 1s all ease ;
+    box-shadow: 1px 1px 15px 8px gray;
 }
 
 .projectBox .btn{
@@ -204,7 +206,6 @@ max-width: 350px;
     transform: translateX(380px);
 }
 .downloadBtn{
-
     cursor: pointer;
     position: absolute;
     left: -120px;
@@ -228,17 +229,15 @@ max-width: 350px;
 .skill-section{
     margin-top: 50px;
     padding: 20px 50px;
-    background-color: #000000;
-    opacity: 0.9;
-    color: white;
-
+    background-image: linear-gradient(to right, #c1c8ff, #dddcdc);
+    color: black;
 }
 .heading{
     margin-top: 20px ;
     margin-bottom: 50px;
     text-align: center;
     font-size: 55px;
-    text-shadow: 2px 5px 1px rgb(100, 100, 100);
+    text-shadow: 2px 6px 1px rgb(151, 149, 149);
     text-transform: capitalize;
 }
 .skills-container{
@@ -298,7 +297,7 @@ max-width: 350px;
 .skill-card:nth-child(5) .skill-level{
     background: #4fdfff28;
     border-color: #4fdfff;
-    color: #4fdfff;
+    color: #04c0eb;
 }
 
 /* timeline */
@@ -306,8 +305,7 @@ max-width: 350px;
 .timeline{
     width: 80%;
     height: 750px;
-    margin: 150px auto;
-    /* border: 1px solid red; */
+    margin: 100px auto;
 }
 
 .timeline .heading{
@@ -317,7 +315,8 @@ max-width: 350px;
 .card{
     width: 45%;
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 0px 30px 0px 30px;
+    box-shadow: 1px 1px 15px 8px gray;
     color: #fff;
     margin: -80px 0;
     position: relative;
@@ -333,7 +332,7 @@ max-width: 350px;
 .card:nth-child(even):before{
     content: '';
     position: absolute;
-    left: -15%;
+    left: -14%;
     top: 50%;
     transform: translateY(-50%);
     width: 20px;
@@ -350,14 +349,14 @@ max-width: 350px;
     transform: translateY(-50%);
     width: 7%;
     height: 2px;
-    background: #fff;
+    background-color: #000;
     z-index: -1;
 }
 
 .card:nth-child(odd):before{
     content: '';
     position: absolute;
-    right: -13%;
+    right: -15%;
     top: 50%;
     transform: translateY(-50%);
     width: 20px;
@@ -369,12 +368,12 @@ max-width: 350px;
 .card:nth-child(odd):after{
     content: '';
     position: absolute;
-    right: -8.5%;
+    right: -9%;
     top: 50%;
     transform: translateY(-50%);
-    width: 7%;
+    width: 9%;
     height: 2px;
-    background: #fff;
+    background: #000;
     z-index: -1;
 }
 
@@ -397,11 +396,11 @@ max-width: 350px;
 .card:nth-child(even) .card-body:before{
     content: '';
     position: absolute;
-    left: -12%;
-    top: 0;
+    left: -11%;
+    top: 0px;
     width: 0px;
     height: 100%;
-    border: 1px dashed #fff;
+    border: 2px dashed #000;
     z-index: -1;
 }
 
@@ -467,4 +466,619 @@ margin-top: 20px;
 border: 8px solid rgb(90, 90, 90);
 box-shadow: 0px 0px 1px 8px rgb(255, 218, 148);
 border-radius: 5px;
+}
+.footer p{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 20px;
+}
+.footer span{
+    background-color: rgb(253, 92, 92); ;
+    color: white;
+    padding: 10px;
+}
+
+@media(min-width: 1024px) and ( max-width:1200px){
+    
+     .mainDisplay{
+        display: flex;
+        justify-content: space-around;
+        max-width: 100%;
+        height: 300px;
+        background-color: white;
+        padding-top: 140px;
+    }
+    
+    .paragraph{
+        margin-top: 30px;
+        position: relative;
+        left: -650px;
+        padding: 30px;
+        width: 480px;
+        height: 460px;
+        color: black;
+        transition: 2.5s all ease;
+        transform: translateX(650px);
+        /* border: 1px solid red; */
+    }
+    
+    .paragraph h1{
+        font-size: 65px;
+        text-shadow: 2px 5px 1px rgb(100, 100, 100);
+        margin-bottom: 15px;
+    }
+    
+    .paragraph p{
+    font-size: 16px;
+    color: rgb(66, 66, 66);
+    }
+    .displayImage{
+        position: relative;
+        right: -650px;
+        max-width: 300px;
+        height: 480px;
+        transition: 2.5s all ease;
+        transform: translateX(-650px);
+        /* border: 5px solid red; */
+    }
+    .displayImage img{
+        max-width: 290px;
+        height: 480px;
+        border-radius: 8px;
+        box-shadow: 1px 1px 20px 8px rgb(120, 119, 119);
+    }
+
+    /* project */
+
+    .projectSection{
+        margin-top: 50px;
+        padding: 30px;
+        max-width: 100%;
+        height: 1800px;
+        background-image: linear-gradient(to right, #c7cdfd, #eeeded);
+        /* display: none; */
+    }
+    .cards{
+        margin: 0px auto;
+        padding-top: 40px;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        max-width: 90%;
+        height: 1650px;
+        margin-bottom: 20px;
+    }
+    .projectBox{
+        position: relative;
+        margin-left: 15px;
+        width: 355px;
+        height: 280px;
+
+    }
+    .projectBox img{
+        width: 350px;
+        height: 100%;
+        border-radius: 15px;
+        transition: 1s all ease ;
+        box-shadow: 1px 1px 15px 8px gray;
+    }
+
+    /* about */
+
+    .AboutSection{
+        max-width: 100%;
+        height: 100%;
+        background-color: white;
+        padding-top: 50px;
+    }
+    .about{
+        display: flex;
+        flex: 1;
+        max-width: 100%;
+        height: 500px;
+    
+    }
+    .aboutImg img{
+        position: relative;
+        left: -380px;
+    border-radius: 5px;
+    padding-left: 50px;
+    max-width: 350px;
+        height: 500px;
+        transition: 1s all ease;
+        transform: translateX(380px);
+    }
+    .aboutInfo{
+        position: relative;
+        max-width: 620px;
+        padding:10px 20px;
+    }
+    
+    /* skills */
+    .skill-section{
+        margin-top: 50px;
+        padding: 20px 50px;
+        background-image: linear-gradient(to right, #c7cdfd, #eeeded);
+        opacity: 0.9;
+        color: black;
+    }
+    .skills-container{
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        column-gap: 0px ;
+        row-gap: 60px ; 
+    }
+    .skill-card{
+        position: relative;
+        width: 250px;
+        height: 330px;
+        padding-top: 20px;
+    }
+    .skill-level{
+        position: absolute;
+        border: 6px solid orangered;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        bottom: 120px;
+        left: 130px;
+        background-color: rgba(223, 221, 221, 0.676);
+        text-align: center;
+        padding-top: 32px;
+        font-size: 20px;
+    }
+
+    /* timeline */
+
+.timeline{
+    width: 80%;
+    height: 100%;
+    margin: 80px auto;
+    margin-bottom: 180px;
+}
+.card{
+    width: 45%;
+    padding: 30px;
+    border-radius: 0px 30px 0px 30px;
+    box-shadow: 1px 1px 15px 8px gray;
+    color: #fff;
+    margin: -80px 0;
+    position: relative;
+    background: #f00;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+/* contact */
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.contactBox1 input{
+    padding-left: 10px;
+    color: rgb(107, 107, 107);;
+    width: 600px;
+    height: 45px;
+    border: 2px solid rgb(140, 140, 140);
+    background-color: rgb(227, 225, 225);
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+}
+.contactBox1 textarea{
+    padding: 10px;
+    color: rgb(107, 107, 107);
+    height: 350px;
+    border: 2px solid rgb(140, 140, 140);
+    background-color: rgb(227, 225, 225);
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+}
+.contactBox1 button{
+    cursor: pointer;
+    background-color: rgb(253, 92, 92);
+    border: none;
+    width: 300px;
+    height: 50px;
+    color: white;
+    font-size: 18px;
+    margin: 10px auto;
+    transition: 1s all ease;
+}
+.contactBox2 iframe{
+    border: 1px solid red;
+    width: 600px;
+}
+.footer span{
+    padding: 10px;
+    width: 380px;
+    height: 40px;
+    background-color: rgb(253, 92, 92); ;
+    color: white;
+}
+
+}
+
+@media(min-width: 768px) and (max-width: 1020px){
+    
+.container{
+    max-width: 100%;
+    height: 630px;
+    background-color: white;
+    padding: 10px;
+}
+.navLink{
+    display: flex;
+    position: fixed;
+    gap: 60px;
+    justify-content: center;
+    padding: 25px;
+    width: 100%;
+    height: 70px;
+    z-index: 9999;
+    background-color: white;
+    border-bottom: 2px solid orangered;
+}
+.navLink a{
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    transition: 1s all ease;
+}
+
+    .mainDisplay{
+        display: flex;
+        justify-content: space-around;
+        max-width: 100%;
+        height: 500px;
+        background-color: white;
+        padding-top: 140px;
+    }
+    
+    .paragraph{
+        margin-top: 30px;
+        position: relative;
+        left: -650px;
+        padding: 30px;
+        width: 400px;
+        height: 460px;
+        color: black;
+        transition: 2.5s all ease;
+        transform: translateX(650px);
+        /* border: 1px solid red; */
+    }
+    
+    .paragraph h1{
+        font-size: 55px;
+        text-shadow: 2px 5px 1px rgb(100, 100, 100);
+        margin-bottom: 15px;
+    }
+    
+    .paragraph p{
+    font-size: 14px;
+    color: rgb(66, 66, 66);
+    }
+    .displayImage{
+        position: relative;
+        right: -650px;
+        max-width: 300px;
+        height: 480px;
+        transition: 2.5s all ease;
+        transform: translateX(-650px);
+        /* border: 5px solid red; */
+    }
+    .displayImage img{
+        max-width: 290px;
+        height: 420px;
+        border-radius: 8px;
+        box-shadow: 1px 1px 20px 8px rgb(120, 119, 119);
+    }
+
+    /* project */
+
+    .projectSection{
+        margin-top: 50px;
+        padding: 30px;
+        max-width: 100%;
+        height: 1800px;
+        background-image: linear-gradient(to right, #c7cdfd, #eeeded);
+    }
+    .projectSection h1{
+        font-size: 45px;
+        text-shadow: 1px 4px gray;
+    }
+    .cards{
+        padding-top: 40px;
+        display: flex;
+        flex: 1;
+        margin: 0px auto;
+        justify-content: center;
+        max-width: 100%;
+        height: 1650px;
+        margin-bottom: 20px;
+    }
+    .projectBox{
+        position: relative;
+        margin-left: 15px;
+        width: 300px;
+        height: 250px;
+
+    }
+    .projectBox img{
+        width: 300px;
+        height: 250px;
+        border-radius: 15px;
+        transition: 1s all ease ;
+        box-shadow: 1px 1px 15px 8px gray;
+    }
+    .projectBox .btn{
+        position: absolute;
+        color: white;
+        width: 240px;
+        height: 150px;
+        z-index: 1;
+        top: 50px;
+        left: 30px;
+        opacity: 0;
+        padding-top: 10px;
+    }
+    .projectBox .btn p{
+        text-align: center;
+        font-size: 14px;
+    
+    }
+    .projectBox .btn button{
+        width: 100px;
+        font-size: 11px;
+    }
+
+    /* about */
+
+    .AboutSection{
+        max-width: 100%;
+        height: 100%;
+        background-color: white;
+        padding-top: 50px;
+    }
+    .about{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        height: 800px;
+    
+    }
+    .aboutImg img{
+        position: relative;
+        left: -380px;
+    border-radius: 5px;
+    max-width: 500px;
+        height: 400px;
+        transition: 1s all ease;
+        transform: translateX(380px);
+        margin: 10px 150px;
+    }
+    .aboutInfo{
+        position: relative;
+        max-width: 700px;
+        padding:10px;
+        font-size: 15px;
+        margin: 0px auto;
+        /* border: 1px solid red; */
+    }
+    .downloadBtn{
+        cursor: pointer;
+        position: absolute;
+        bottom: 30px;
+        background-color: black;
+        width: 120px;
+        height: 30px;
+        color: white;
+        border: none;
+        transition: 1s all ease 0.5s;
+        transform: translateX(250px);
+        margin-left: 210px;
+    }
+    
+    
+    /* skills */
+    .skill-section{
+        margin-top: 50px;
+        padding: 20px 50px;
+        background-image: linear-gradient(to right, #c7cdfd, #eeeded);
+        opacity: 0.9;
+        color: black;
+    }
+    .skills-container{
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        column-gap: 0px ;
+        row-gap: 60px ; 
+    }
+    .skill-card{
+        position: relative;
+        width: 250px;
+        height: 330px;
+        padding-top: 20px;
+    }
+    .skill-level{
+        position: absolute;
+        border: 6px solid orangered;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        bottom: 120px;
+        left: 130px;
+        background-color: rgba(223, 221, 221, 0.676);
+        text-align: center;
+        padding-top: 32px;
+        font-size: 20px;
+    }
+
+    /* timeline */
+
+.timeline{
+    width: 80%;
+    height: 100%;
+    margin: 80px auto;
+    margin-bottom: 180px;
+}
+.card{
+    width: 45%;
+    padding: 30px;
+    border-radius: 0px 30px 0px 30px;
+    box-shadow: 1px 1px 15px 8px gray;
+    color: #fff;
+    margin: -80px 0;
+    position: relative;
+    background: #f00;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+.card:nth-child(even):before{
+    content: '';
+    position: absolute;
+    left: -16%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 5px solid #191919;
+    border-radius: 50%;
+}
+
+.card:nth-child(even):after{
+    content: '';
+    position: absolute;
+    left: 8.5%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 7%;
+    height: 2px;
+    background-color: #000;
+    z-index: -1;
+}
+
+.card:nth-child(odd):before{
+    content: '';
+    position: absolute;
+    right: -20%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 5px solid #191919;
+    border-radius: 50%;
+}
+
+.card:nth-child(odd):after{
+    content: '';
+    position: absolute;
+    right: -10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 9%;
+    height: 2px;
+    background: #000;
+    z-index: -1;
+}
+
+.card:nth-child(2), .card:nth-child(2):before{
+    background: #ff4f4f;
+}
+.card:nth-child(3), .card:nth-child(3):before{
+    background: #ffb84f;
+}
+.card:nth-child(4), .card:nth-child(4):before{
+    background: #3dca5c;
+}
+.card:nth-child(5), .card:nth-child(5):before{
+    background: #565252;
+}
+.card:nth-child(6), .card:nth-child(6):before{
+    background: #4fa0ff;
+}
+
+.card:nth-child(even) .card-body:before{
+    content: '';
+    position: absolute;
+    left: -11%;
+    top: 0px;
+    width: 0px;
+    height: 100%;
+    border: 2px dashed #000;
+    z-index: -1;
+}
+
+.card-title{
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+/* contact */
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.contactBox1 input{
+    padding-left: 10px;
+    color: rgb(107, 107, 107);;
+    width: 500px;
+    height: 45px;
+    border: 2px solid rgb(140, 140, 140);
+    background-color: rgb(227, 225, 225);
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+}
+.contactBox1 textarea{
+    padding: 10px;
+    color: rgb(107, 107, 107);
+    height: 350px;
+    border: 2px solid rgb(140, 140, 140);
+    background-color: rgb(227, 225, 225);
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+}
+.contactBox1 button{
+    cursor: pointer;
+    background-color: rgb(253, 92, 92);
+    border: none;
+    width: 250px;
+    height: 45px;
+    color: white;
+    font-size: 18px;
+    margin: 10px auto;
+    transition: 1s all ease;
+}
+.contactBox2 iframe{
+    border: 1px solid red;
+    width: 500px;
+}
+.footer span{
+    padding: 10px;
+    width: 380px;
+    height: 40px;
+    background-color: rgb(253, 92, 92); ;
+    color: white;
+}
+
+
 }
